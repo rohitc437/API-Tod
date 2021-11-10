@@ -1,0 +1,80 @@
+
+#buttonShow,#prevShow,#nextShow,#pagenumber{
+    width:50%;
+    color: white;
+    background-color: rgb(18, 114, 192);
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    transition: all 0.6s ease;
+}
+
+#prevShow,#nextShow,#pagenumber{
+  width:20%;
+  margin:30px 10px 0px 10px;
+}
+
+#buttonShow:hover,#prevShow:hover,#nextShow:hover{
+  cursor: pointer;
+    background-color: rgb(6, 50, 87)
+}
+
+#buttonShow:active,#prevShow:active,#nextShow:active{
+    color:blue;
+    transform: translateY(10px)
+}
+
+#navigators{
+  display: flex;
+  justify-content: center;
+}
+
+#pagenumber{
+  background-color: rgba(16, 75, 95, 0.7);
+  color:rgba(243, 239, 239, 0.9);
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 700px) {
+    #buttonShow {
+        visibility: hidden;
+    }
+    #buttonShow:after{
+        content: 'Show';
+        visibility:visible;
+        color: white;
+        background-color: rgb(18, 114, 192);
+        font-size: 20px;
+        border: none;
+        border-radius: 3px;
+        padding: 10px;
+        height:200px;
+        cursor: pointer;
+        transition: all 0.6s ease;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 1000px) {
+
+    #buttonShow {
+        visibility: hidden;
+    }
+
+    #buttonShow:after{
+        content: 'Show';
+        visibility:visible;
+        color: white;
+        background-color: rgb(18, 114, 192);
+        font-size: 20px;
+        border: none;
+        border-radius: 3px;
+        padding: 10px;
+        height:200px;
+        cursor: pointer;
+        transition: all 0.6s ease;
+    }
+
+  }
